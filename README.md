@@ -1,1 +1,1 @@
-# CPS - Content-Publishing-Posting-System
+# CPS - Content Publishing/Posting System
