@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\CPS-Batch1-Team2.props" />
-</Project>
