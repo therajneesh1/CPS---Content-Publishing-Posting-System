@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Register Yourself";
+}
+
+<link rel="stylesheet" href="@Url.Content("~/css/Auth.css")">
+
+@* <button class="logo">Logo</button> *@
+<img src="https://images.vexels.com/content/142789/preview/multicolor-swirls-circle-logo-41322f.png" alt="Logo" class="logo" width="80" height="80" />
+<h2>Register Yourself</h2>
+<form id="registerForm" method="post">
+    <input type="text" id="regEmail" name="email" placeholder="Username/Email" required>
+    <input type="text" id="regMobile" name="mobile" placeholder="Mobile" required>
+    <input type="password" id="regPassword" name="password" placeholder="Password" required>
+    <input type="password" id="regConfirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+    <div class="options">
+        @* <input type="checkbox" id="remember-reg" name="remember"> *@
+        <label for="remember-reg"><input type="checkbox" id="remember-reg" name="remember"> Remember Me</label>
+    </div>
+    <button type="submit" class="btn">Register</button>
+    <p>Already have an account? <a asp-controller="Auth" asp-action="AuthLogin">Login Here</a></p>
+</form>
+<div class="bottom-plate">
+    Company terms and conditions.
+</div>
+
+
+<script src="@Url.Content("~/js/Auth.js")"></script>

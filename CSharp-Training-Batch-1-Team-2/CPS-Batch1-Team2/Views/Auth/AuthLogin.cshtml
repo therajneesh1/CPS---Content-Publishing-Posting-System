@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "User Login";
+}
+
+<link rel="stylesheet" href="@Url.Content("~/css/Auth.css")">
+
+@* <button class="logo">Logo</button> *@
+<img src="https://images.vexels.com/content/142789/preview/multicolor-swirls-circle-logo-41322f.png" alt="Logo" class="logo" width="80" height="80"/>
+<h2>Welcome Back To CPS!</h2>
+<form id="loginForm" method="post">
+    <input type="text" id="loginEmail" name="email" placeholder="Username/Email" required>
+    <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+    <div class="options">
+        <div>
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember Me</label>
+        </div>
+        <a asp-controller="Auth" asp-action="AuthForgotPassword">Forgot Password?</a>
+    </div>
+    <button type="submit" class="btn">Login</button>
+    <p>Don’t have an account? <a asp-controller="Auth" asp-action="AuthRegister">Register Here</a></p>
+</form>
+    <div class="bottom-plate">
+        Company terms and conditions.
+    </div>
+
+<script src="@Url.Content("~/js/Auth.js")"></script>

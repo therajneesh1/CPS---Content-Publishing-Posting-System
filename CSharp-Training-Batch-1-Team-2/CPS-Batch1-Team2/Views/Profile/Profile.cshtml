@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "My Profile";
+}
+
+<link href="~/css/Profile.css" rel="stylesheet" />
+
+
+<div class="profile-wrapper">
+    <!-- Profile Left Section -->
+    <div class="profile-left">
+        <img src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg" alt="Profile" class="profile-img">
+        <h3>Abhi Rai</h3>
+        <p>.NET Full Stack Developer</p>
+        <button class="edit-btn" onclick="toggleEdit()">Edit Profile</button>
+        <button class="message-btn">Message</button>
+        @* <button class="social-btn">Website</button> *@
+        @* <button class="social-btn">Github</button> *@
+        @* <button class="social-btn">LinkedIn</button> *@
+        <input class="social-input" type="text" name="social-btn" value="" placeholder="Website" />
+        <input class="social-input" type="text" name="social-btn" value="" placeholder="Github" />
+        <input class="social-input" type="text" name="social-btn" value="" placeholder="Linkedin" />
+        <!-- <div class="social-btns">
+            <button class="social-btn">Website</button>
+            <button class="social-btn">Github</button>
+            <button class="social-btn">LinkedIn</button>
+        </div> -->
+    </div>
+
+    <!-- Profile Right Section -->
+    <div class="profile-right">
+        <div class="contact-info">
+            <h4>📌 Contact Information</h4>
+            <p><strong>Full Name:</strong> Abhi Rai</p>
+            <p><strong>Email:</strong> abhi12@gmail.com</p>
+            <p><strong>Mobile:</strong> 9876543210</p>
+            <p><strong>Address:</strong> Jabalpur, MP, India</p>
+        </div>
+        <div class="skills">
+            <h4>📊 Project / Technical Skills</h4>
+            <label>Web Design</label>
+            <progress value="80" max="100"></progress>
+            <label>Android Dev</label>
+            <progress value="50" max="100"></progress>
+            <label>Testing</label>
+            <progress value="70" max="100"></progress>
+        </div>
+    </div>
+
+    <!-- Optional: Edit Profile Section (initially hidden) -->
+    <div class="edit-profile-container hidden">
+        <h2>Edit Profile</h2>
+        <div class="edit-section">
+            <h4>Contact Information</h4>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Address">
+        </div>
+        <div class="edit-section">
+            <h4>Enter Website's URL</h4>
+            <input type="text" placeholder="Website">
+            <input type="text" placeholder="Github">
+            <input type="text" placeholder="LinkedIn">
+        </div>
+        <div class="edit-section">
+            <h4>Add Project and Skillset</h4>
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="%">
+        </div>
+        <button class="save-btn" onclick="toggleEdit()">Save</button>
+    </div>
+
+</div>
+
+
+
+
+
+<script src="~/js/Profile.js"></script>
