@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CPS-Batch1-Team2.props" />
+</Project>
